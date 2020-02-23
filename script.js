@@ -33,7 +33,7 @@ function checkEmail()
 if(mail=="" || mail=="null")
 {
 alert("please enter your email");
-document.registration.email.focus();
+
 return false;
 }
 var atpos = mail.indexOf("@");
@@ -63,7 +63,7 @@ var checkLower = /[a-z]+/.test(pass);
     if(pass=="" || pass=="null")
     {
     alert("please enter ur password");
-    document.registration.pwd.focus();
+    
     return false;
     }
     if(checkSpecial && checkLower && checkUpper)
@@ -74,7 +74,7 @@ var checkLower = /[a-z]+/.test(pass);
     {
     alert("Password should be the combination of atleast one lowercase letter, uppercase
     letter & special symbols like ($, & ,#)") ;
-    document.registration.pwd.focus();
+
     return false;
      }
 alert("Registration successfull");
